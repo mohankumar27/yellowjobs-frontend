@@ -11,11 +11,11 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   console.log('fetch event', event)
-  //gevent('test')
-  event.waitUntil(
-    fetch('https://www.google-analytics.com/collect', {
-      method: 'POST',
-      body: 'v=1&tid=G-N190RPEJJ&t=event&ec=testCat&ea=testA&el=testl&ev=6',
-    })
+  //add ga4 api
+//   event.waitUntil(
+//     fetch('https://www.google-analytics.com/collect', {
+//       method: 'POST',
+//       body: 'v=1&tid=G-N190RPEJJ&t=event&ec=testCat&ea=testA&el=testl&ev=6',
+//     })
   )
 })
