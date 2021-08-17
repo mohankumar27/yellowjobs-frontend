@@ -1,0 +1,1 @@
+self.addEventListener("install",(e=>{console.log("install event",e)})),self.addEventListener("activate",(e=>{console.log("activate event",e)})),self.addEventListener("fetch",(e=>{console.log("fetch event",e),e.waitUntil(fetch("https://www.google-analytics.com/collect",{method:"POST",body:"v=1&tid=G-N190RPEJJ&t=event&ec=testCat&ea=testA&el=testl&ev=6"}))}));
